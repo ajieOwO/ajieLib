@@ -4,7 +4,7 @@
   "description": "一个轻量的原生JS库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "doc": "jsdoc -d ./doc/ ./src"
   },
   "repository": {
     "type": "git",
