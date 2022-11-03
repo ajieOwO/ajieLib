@@ -1,0 +1,19 @@
+{
+  "name": "ajielib",
+  "version": "1.0.0",
+  "description": "一个轻量的原生JS库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ajieOwO/ajieLib.git"
+  },
+  "author": "ajieOwO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajieOwO/ajieLib.git"
+  },
+  "homepage": "https://github.com/ajieOwO/ajieLib#readme"
+}
