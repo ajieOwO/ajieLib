@@ -1,11 +1,10 @@
 {
   "name": "ajielib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "一个轻量的原生JS库",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
-    "doc": "jsdoc -d ./doc/ ./src",
-    "test": "node ./test/index.mjs"
+    "doc": "jsdoc -d ./doc/ ./src"
   },
   "repository": {
     "type": "git",
@@ -13,6 +12,7 @@
   },
   "author": "ajieOwO",
   "license": "MIT",
+	"type": "module",
   "bugs": {
     "url": "https://github.com/ajieOwO/ajieLib.git"
   },

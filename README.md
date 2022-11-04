@@ -1,21 +1,24 @@
 # ajieLib
 一个轻量的原生JS库
 
-# 安装与导入
 
-## 使用npm
+## 安装与下载
 
-### 安装
+### 使用npm
 
 `npm install ajielib`
 
-### 导入
+### 使用git
+
+`git clone https://github.com/ajieOwO/ajieLib.git`
+
+
+## 导入
 
 ```javascript
-import 
+import { drawSector } from 'ajielib';
 ```
-- 使用git： `git clone https://github.com/ajieOwO/ajieLib.git`
 
-# 使用
+## 模块介绍
 
-- 使用
+- `drawSector`： 饼图绘制。饼图内容严格按照传入数组中的顺序。

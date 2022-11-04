@@ -1,5 +1,6 @@
-import ajieDate from './src/ajieDate';
-import drawSector from './src/drawSector';
+'use strict'
+import ajieDate from './lib/ajieDate.js';
+import drawSector from './lib/drawSector.js';
 
 const Lib = {
 	ajieDate,
