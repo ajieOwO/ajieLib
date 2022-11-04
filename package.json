@@ -1,10 +1,11 @@
 {
   "name": "ajielib",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "一个轻量的原生JS库",
   "main": "index.js",
   "scripts": {
-    "doc": "jsdoc -d ./doc/ ./src"
+    "doc": "jsdoc -d ./doc/ ./src",
+    "test": "node ./test/index.mjs"
   },
   "repository": {
     "type": "git",
