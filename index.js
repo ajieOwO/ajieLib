@@ -1,16 +1,19 @@
-'use strict'
-import ajieDate from './lib/ajieDate.js';
+'use strict';
+import ajieArray from './lib/ajieArray.js';
+import AjieDate from './lib/ajieDate.js';
 import ajieXHR from './lib/ajieXHR.js';
 import drawSector from './lib/drawSector.js';
 
 const Lib = {
-	ajieDate,
+	ajieArray,
+	AjieDate,
 	ajieXHR,
 	drawSector
 }
 
 export {
-	ajieDate,
+	ajieArray,
+	AjieDate,
 	ajieXHR,
 	drawSector
 }
