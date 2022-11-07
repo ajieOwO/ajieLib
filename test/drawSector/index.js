@@ -46,4 +46,6 @@ window.onload = () => {
 	
 	drawSector(ctx, data, color);
 
+	drawSector(ctx, {...data, ...{title: '测试'}}, color);
+
 }
