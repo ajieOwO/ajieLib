@@ -1,22 +1,23 @@
 import { AjieDate } from "../../index.js";
 
-let t1 = new Date();
-let t2 = new AjieDate();
+let t = new AjieDate();
+
+window.AjieDate = AjieDate;
 
 window.onload = () => {
 	let text = '';
 	let arr = [
-		`Date.toAjieString(): ${t1.toAjieString()}`,
-		`Date.toAjieWeek(): ${t1.toAjieWeek()}`,
-		`Date.toAjieDate(): ${t1.toAjieDate()}`,
-		`Date.toAjieLogDate(): ${t1.toAjieLogDate()}`,
-		`Date.startOfThisMonth().toAjieString(): ${t1.startOfThisMonth().toAjieString()}`,
-		`Date.endOfThisMonth().toAjieString(): ${t1.endOfThisMonth().toAjieString()}`,
-		'&nbsp',
-		`AjieDate.getTime(): ${t2.getTime()}`,
-		`Date.getTime(): ${t1.getTime()}`,
-		`AjieDate.toAjieString(): ${t2.toAjieString()}`,
+		`AjieDate.toAjieString(): ${t.toAjieString()}`,
+		`AjieDate.toAjieWeek(): ${t.toAjieWeek()}`,
+		`AjieDate.toAjieDate(): ${t.toAjieDate()}`,
+		`AjieDate.toAjieLogDate(): ${t.toAjieLogDate()}`,
+		`AjieDate.startOfThisMonth().toAjieString(): ${t.startOfThisMonth().toAjieString()}`,
+		`AjieDate.endOfThisMonth().toAjieString(): ${t.endOfThisMonth().toAjieString()}`,
+		`AjieDate.getAjieTime(): ${t.getAjieTime()}`,
+		`AjieDate.getTime(): ${t.getTime()}`
 	]
+
+	window.AjieDate = AjieDate
 
 	arr.forEach(ele => text += `<p>${ele}</p>`);
 	

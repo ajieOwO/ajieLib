@@ -45,7 +45,7 @@ declare namespace ajieXHR{
 	 * @param data 请求携带的数据
 	 * @param type 期待的数据响应类型
 	 */
-	 export function get(src: string, data: array, type?: string): promise
+	 function get(src: string, data: array, type?: string): promise
 
 	 /**
 		* 发起一个post请求
@@ -53,5 +53,51 @@ declare namespace ajieXHR{
 		* @param data 请求携带的数据
 		* @param type 期待的数据响应类型
 		*/
-	 export function post(src: string, data: array, type?: string): promise
+	 function post(src: string, data: array | object , type?: string): promise
+}
+
+/** 新增一堆方法的Date */
+declare class AjieDate{
+
+	/** 获取当前时间，以xxxx年xx月xx日 xx:xx:xx格式 */
+	toAjieString(): string;
+
+	/** 获取当前时间，以xxxx年xx月xx日 周x xx:xx:xx格式 */
+	toAjieStringWithWeek(): string;
+
+	/** 获取当前周，以周x格式 */
+	toAjieWeek(): string;
+
+	/** 获取当前年月日，以xxxx年xx月xx日格式 */
+	toAjieDate(): string;
+
+	/** 获取当前年月日，以xxxx-xx-xx格式 */
+	toAjieLogDate(): string;
+
+	/** 获取本月第一天00:00:00.000 */
+	startOfThisMonth(): Date;
+
+	/** 获取本月最后一天23:59:59.999 */
+	endOfThisMonth(): Date;
+}
+
+/** 提供数字中对象值查找功能 */
+declare class AjieArray{
+	/** 仅接受数组元素为对象的数组 */
+	constructor(arg: array);
+
+	/** 将普通数组转换为AjieArray */
+	static fromArray(arr: array): AjieArray;
+
+	/** 获取属性key的值为value的所有元素
+	 * @param key 属性名
+	 * @param value 属性值
+	*/
+	getElesByKey(key: string, value: string | number | boolean): AjieArray;
+
+	/** 获取属性key的值为value的第一个元素
+	 * @param key 属性名
+	 * @param value 属性值
+	*/
+	getFirstEleByKey(key: string, value: string | number | boolean): object;
 }

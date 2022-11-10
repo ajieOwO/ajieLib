@@ -46,6 +46,6 @@ window.onload = () => {
 	
 	drawSector(ctx, data, color);
 
-	drawSector(ctx, {...data, ...{title: '测试'}}, color);
+	drawSector(ctx, {...data, ...{title: '扇形统计图（刷新后）'}}, color);
 
 }

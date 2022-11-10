@@ -1,6 +1,6 @@
-import { ajieArray } from "../../index.js";
+import { AjieArray } from "../../index.js";
 
-let data = [
+let rawData = [
 	{
 		"id": 1,
 		"type": 0,
@@ -25,10 +25,16 @@ let data = [
 		"value": 115,
 		"notes": ""
 	}
-]
+];
+
+let arr = new AjieArray();
+
+window.AjieArray = AjieArray;
 
 window.onload = () => {
 	let text = '';
+
+	let data = AjieArray.fromArray(rawData);
 	let arr = [
 		`<pre>getElesByKey('id', 1) : ${JSON.stringify(data.getElesByKey('id', 1), null, 2)}</pre>`,
 		`<pre>getFirstEleByKey('id', 1) : ${JSON.stringify(data.getFirstEleByKey('id', 1), null, 2)}</pre>`
@@ -37,4 +43,6 @@ window.onload = () => {
 	arr.forEach(ele => text += `<p>${ele}</p>`);
 	
 	document.body.innerHTML = text;
+
+
 }
